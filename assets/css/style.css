@@ -1,0 +1,349 @@
+
+:root {
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Nunito", sans-serif;
+  --nav-font: "Inter", sans-serif;
+}
+
+/* Global Colors */
+:root {
+  --background-color: #ffffff;
+  --background-color-rgb: 255, 255, 255;
+  --default-color: #8c9581;
+  --default-color-rgb: 140, 149, 129;
+  --heading-color: #192f0a;
+  --heading-color-rgb: 25, 47, 10;
+  --accent-color: #85bc3a;
+  --accent-color-rgb: 133, 188, 58;
+  --contrast-color: #ffffff;
+  --contrast-color-rgb: 255, 255, 255;
+}
+
+/* Nav Menu Colors */
+:root {
+  --nav-color: #2c3e20;
+  --nav-hover-color: #c3dc94;
+  --nav-dropdown-color: #2c3e20;
+  --nav-dropdown-hover-color: #c3dc94;
+  --nav-dropdown-background-color: #ffffff;
+}
+
+/* Smooth scroll */
+:root {
+  scroll-behavior: smooth;
+}
+
+
+/*------------ Login container ------------*/
+
+.box-area{
+    width: 930px;
+}
+
+/*------------ Right box ------------*/
+
+.right-box{
+    padding: 40px 30px 40px 40px;
+}
+
+/*------------ Custom Placeholder ------------*/
+
+::placeholder{
+    font-size: 16px;
+}
+
+.rounded-4{
+    border-radius: 20px;
+}
+.rounded-5{
+    border-radius: 30px;
+}
+
+.btn-custom {
+    background-color: #85bc3a;
+    border-color: #85bc3a;
+    color: white;
+
+    
+}
+.btn-custom:hover{
+  color: var(--contrast-color);
+  background: rgba(var(--accent-color-rgb), 0.85);
+}
+
+
+/*------------ For small screens------------*/
+
+@media only screen and (max-width: 768px){
+
+     .box-area{
+        margin: 0 10px;
+
+     }
+     .left-box{
+        height: 100px;
+        overflow: hidden;
+     }
+     .right-box{
+        padding: 20px;
+     }
+
+}
+
+/*------------ Get Started ------------*/
+
+.card {
+    border-radius: 15px;
+  }
+  
+  #imagePreview img {
+    display: none;
+  }
+  
+  .gallery-item {
+    margin-bottom: 30px;
+  }
+  
+  .card-img-top {
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .feedback-form {
+    margin-top: 10px;
+  }
+  
+  .feedback-form textarea {
+    width: 100%;
+    resize: none;
+  }
+  
+  .feedback {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+    background: #f9f9f9;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  .feedback-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    background: #f8f9fa;
+  }
+  
+  .feedback-item .badge {
+    margin-right: 5px;
+  }
+  
+  .Sharing{
+    background-color: rgba(56, 141, 168, 0.06);
+  }
+
+
+  /* Featured  */
+  .Featured__card{
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .Featured__card:hover {
+    transition: all 0.3s ease;
+
+    box-shadow: 0px 2px 25px color-mix(in srgb, #2d4d01, transparent 90%);
+  }
+
+  .Featured__circle {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: rgba(var(--accent-color-rgb), .06); /* Default background color for .Featured__circle */
+  }
+  
+  .Featured__icons {
+    color: var(--accent-color); /* Default color for .Featured__icons */
+    transition: color 0.3s ease;
+    fill: currentColor;
+
+  }
+  
+  .Featured__circle:hover {
+    background-color: var(--accent-color); /* Background color on hover for .Featured__circle */
+  }
+  
+  .Featured__circle:hover .Featured__icons {
+    color: var(--contrast-color); /* Color on hover for .Featured__icons */
+  }
+  
+  .rounded-img_new{
+    border-radius: 8px; 
+  }
+
+
+
+.Featured__love {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: rgba(rgb(245, 245, 245), .06); /* Default background color for .Featured__circle */
+}
+
+
+
+
+/* Container to position the icon */
+.icon-container_l {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Style for the love heart icon */
+.love-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for the icon */
+.love-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Style for favorite cards */
+.card.favorite {
+  border: 2px solid #85bc3a; /* Example: Add a red border to favorite cards */
+}
+
+/* Style for the heart icon when the card is marked as favorite */
+.love-icon.favorite {
+  color: rgb(255, 66, 66);
+}
+
+
+/* Drop-down Profile Menu */
+
+.sub-menu-wrap{
+  position: absolute;
+  top: 100%;
+  right: 10%;
+  width: 320px;
+
+  max-height: 0px;
+  overflow: hidden;
+
+  transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu{
+  max-height: 700px;
+}
+
+.sub-menu {
+  background: rgba(133, 188, 58, 0.5); /* Adjust the last value for transparency */
+  padding: 20px;
+  margin: 10px;
+  border-radius: 30px;
+}
+
+
+.user-info{
+  display: flex;
+  align-items: center;
+}
+.user-info h5{
+  font-weight: 500;
+  margin-top: 9px;
+}
+
+.user-info .user-info_icon{
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 0px;
+}
+
+.user-info_icon{
+  margin-left: 28px;
+
+}
+
+.sub-menu hr{
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the last value for transparency */
+  margin: 15px 0 10px;
+}
+
+.sub-menu-link{
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.sub-menu-link p{
+  margin-top: 12px;
+  width: 100%;
+}
+
+.sub-menu-link .sub-menu-link_img{
+  width: 50px;
+  height: 50px;
+  background: rgba(223, 240, 192, 0.5); /* Adjust the last value for transparency */
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.sub-menu-link span{
+  transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span {
+  transform: translateX(5px);
+}
+
+.sub-menu-link:hover p{
+  font-weight: 600;
+}
+
+.color__icon{
+  color: rgba(140, 149, 129, 0.8); 
+}
+.sub-menu-link:hover .color__icon{
+  color: rgba(133, 188, 58, 0.5);
+}
+
+@media (min-width: 1200px) {
+  .sub-menu-wrap__desktop{
+    display: none;
+  }
+}
+
+
+@media (max-width: 1199px) {
+  .sub-menu-wrap__mobile{
+    display: none;
+  }
+}
+
+
+/* remove-icon_hover */
+.remove-icon_hover{
+  transition: color 0.3s ease;
+}
+.remove-icon_hover:hover{
+  transition: color 0.3s ease;
+  color: red;
+}
+
+
+/* badge-color */
+
+.badge-color{
+
+  background-color: #192f0a;
+
+}

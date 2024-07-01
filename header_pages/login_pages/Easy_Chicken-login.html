@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>The Secret</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="../../assets/img/logo_ico.ico">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../../assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="../../index_Log_in.html" class="logo d-flex align-items-center me-auto">
+        <img src="../../assets/img/logo.png" alt="">
+        <h1 class="sitename">The Secret</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="../../index_Log_in.html#hero" class="">Home</a></li>
+          <li class="dropdown"><a href="#"><span>Quick & Easy</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="Quick_Dinners-login.html">Quick Dinners</a></li>
+              <li><a href="Easy_Healthy-login.html">Easy & Healthy</a></li>
+              <li><a href="Quick_Vegetarian-login.html">Quick Vegetarian</a></li>
+              <li><a href="Easy_Pastas-login.html">Easy Pastas</a></li>
+              <li><a href="Easy_Chicken-login.html">Easy Chicken</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Personalized Dietary</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="Low_Carb_Diet-login.html">Low Carb Diet</a></li>
+              <li><a href="High_Protein_Diet-login.html">High Protein Diet</a></li>
+              <li><a href="Vegetarian_Diet-login.html">Vegetarian Diet</a></li>
+              <li><a href="Vegan_Diet-login.html">Vegan Diet</a></li>       
+              <li><a href="Keto_Diet-login.html">Keto Diet</a></li>
+            </ul>
+          </li>
+
+          <li><a href="../../index_Log_in.html">About</a></li>
+          <li><a href="../../Contact_LogIn.html">Contact</a></li>
+
+          <li class="dropdown"><a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg></span></a>
+            <ul>
+              <li><a href="#"><input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search"></a></li>
+            </ul>
+          </li>
+
+          <li class="sub-menu-wrap__desktop dropdown">
+            <a href="#">
+               <i class="bi bi-person-circle fs-2 toggle-dropdown"></i>
+            </a>
+            <ul>
+              <li><i class="bi bi-person-circle fs-2 mx-2"></i>Mustafa Obaid</li>
+              <li><a href="../../user/Favorite.html">Favorite</a></li>
+              <li><a href="#">Edit Profile</a></li>
+              <li><a href="#">Setting & Privacy</a></li>
+              <li><a href="#">Help & Support</a></li>       
+              <li><a href="../../index.html">Logout</a></li>
+            </ul>
+          </li>
+
+          <li class="sub-menu-wrap__mobile">
+            <a href="#" id="menuTrigger" onclick="toggleMenu()">
+              <i class="bi bi-person-circle fs-2 "></i>
+            </a>
+          
+            <div class="sub-menu-wrap" id="subMenu">
+              <div class="sub-menu">
+                <div class="user-info">
+                  <i class="bi bi-person-circle fs-2 user-info_icon color__icon"></i>
+                  <h5>Mustafa Obaid</h5>
+                </div>
+                <hr>
+
+                <a href="../../user/Favorite.html" class="sub-menu-link">
+                  <i class="bi bi-heart-fill fs-3 sub-menu-link_img color__icon"></i>
+                  <p>Favorite</p>
+                  <span><i class="bi bi-chevron-right fs-6"></i></span>
+                </a>
+
+                <a href="#" class="sub-menu-link">
+                  <i class="bi bi-person-fill fs-3 sub-menu-link_img color__icon"></i>
+                  <p>Edit Profile</p>
+                  <span><i class="bi bi-chevron-right fs-6"></i></span>
+                </a>
+
+                <a href="#" class="sub-menu-link">
+                  <i class="bi bi-person-fill fs-3 sub-menu-link_img color__icon"></i>
+                  <p>Edit Profile</p>
+                  <span><i class="bi bi-chevron-right fs-6"></i></span>
+                </a>
+
+                <a href="#" class="sub-menu-link">
+                  <i class="bi bi-gear-fill fs-3 sub-menu-link_img color__icon"></i>
+                  <p>Setting & Privacy</p>
+                  <span><i class="bi bi-chevron-right fs-6"></i></span>
+                </a>
+          
+                <a href="#" class="sub-menu-link">
+                  <i class="bi bi-question-circle-fill fs-3 sub-menu-link_img color__icon"></i>
+                  <p>Help & Support</p>
+                  <span><i class="bi bi-chevron-right fs-6"></i></span>
+                </a>
+          
+                <a href="../../index.html" class="sub-menu-link">
+                  <i class="bi bi-box-arrow-left fs-3 sub-menu-link_img color__icon"></i>
+                  <p>Logout</p>
+                  <span><i class="bi bi-chevron-right fs-6"></i></span>
+                </a>
+          
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Quick & Easy</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="../../index_Log_in.html">Home</a></li>
+            <li class="current">Easy Chicken</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- End Page Title -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Easy Chicken</h2>
+        <p>Recipes For Easy Chicken With The Secret</p>
+      </div>
+      <!-- End Section Title -->
+
+
+      <main class="container"> 
+        
+        <div id="gallery" class="row "></div> <!-- This div will contain the img313 -->
+
+      </main>
+    </section>
+    <!-- /Contact Section -->
+
+  </main>
+  
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="../../index_Log_in.html" class="logo d-flex align-items-center">
+            <span class="sitename">The Secret</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>10001 Street</p>
+            <p>Amman, jordan 1011</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+962 77 797697</span></p>
+            <p><strong>Email:</strong> <span>Mustafaobaidd@gmail.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>IN THE KITCHEN</h4>
+          <ul>
+            <li><a href="#">Simply Curious</a></li>
+            <li><a href="#">A-Z Guide To Cooking Terms</a></li>
+            <li><a href="#">Recipe Collections</a></li>
+            <li><a href="#">Tips & Techniques</a></li>
+            <li><a href="#">Ingredient Guides</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">The Secret</strong><span>All Rights Reserved</span></p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Vendor JS Files -->
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../../assets/vendor/aos/aos.js"></script>
+  <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../../assets/js/js_pages/js_pages-login/Easy_Chicken_login.js"></script>
+  <script src="../../assets/js/script.js"></script>
+  <script src="../../assets/js/main.js"></script>
+
+  
+</body>
+
+</html>
